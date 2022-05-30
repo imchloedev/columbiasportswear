@@ -1,3 +1,3 @@
-# columbia
+# columbiasportswear
 
 PORTFOLIO
