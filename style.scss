@@ -263,6 +263,7 @@ header.topFixed {
     background: url('img/logo//logo_blue.png') no-repeat;
     background-position: right center;
     background-size: 150px 30px;
+    cursor: pointer;
   }
 
   span {
@@ -286,11 +287,6 @@ header.topFixed {
   z-index: 100;
 }
 
-
-
-.bg_blur {
-
-}
 
 
 .back_blur {
@@ -1029,10 +1025,6 @@ header.topFixed {
 }
 
 
-
-.searchWindow_container {
-
-}
 
 
 .searhWindow_wrapper {

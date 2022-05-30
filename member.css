@@ -325,4 +325,21 @@
   border: none;
   border-bottom: 1px solid #aaa;
 }
+
+.createBtn {
+  margin-top: 40px;
+}
+
+.createBtn button {
+  width: 100%;
+  padding: 18px 0;
+  border: 1px solid #0070d2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.createBtn button:hover {
+  background-color: #0070d2;
+  color: white;
+}
 /*# sourceMappingURL=member.css.map */

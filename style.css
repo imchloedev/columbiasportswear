@@ -212,6 +212,7 @@ header.topFixed {
   background: url("img/logo//logo_blue.png") no-repeat;
   background-position: right center;
   background-size: 150px 30px;
+  cursor: pointer;
 }
 
 .logoBox span {
