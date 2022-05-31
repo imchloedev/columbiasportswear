@@ -199,6 +199,58 @@ select {
 // start
 
 
+// #js-weather {
+//   width: 240px;
+//   height: 100px;
+//   border: 1px solid gray;
+// }
+
+
+
+
+// 날씨 정보 
+
+.weatherinfo {
+  text-align: center;
+  margin-top: 140px;
+  font-size: 24px;
+
+  >div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .CurrIcon {
+    // border: 1px solid gray;
+    width: 26px;
+    height: 26px;
+  }
+
+
+  .CurrTemp {
+    font-size: 34px;
+    margin-left: 10px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  
+
+  .City {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
 
 .bodyscroll {
   overflow: hidden;

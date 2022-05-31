@@ -119,7 +119,7 @@ $(document).ready(function () {
 
 
   // search
-  
+
 
 
   $('.inputBox span').click(function () {
@@ -132,7 +132,7 @@ $(document).ready(function () {
   });
 
 
- $('.searchClose').click(function () {
+  $('.searchClose').click(function () {
     $('.searhWindow').fadeOut();
   });
 
@@ -141,7 +141,7 @@ $(document).ready(function () {
 
 
 
-  
+
   // main 
 
 
@@ -320,15 +320,6 @@ $(window).scroll(function () {
 
 // arrival
 
-// 0 ~ 1 까지의 난수를 생성하는 Math 객체의 random 메소드를 사용합니다.
-
-// random 메소드로 생성된 난수에 ( 예: 0.335435 ) 10 을 곱해줍니다.
-
-// 50을 곱한 난수를 ceil 메소드를 사용하여 올림 값으로 변경합니다.
-// var resultUp = Math.ceil(result);
-// document.write(resultUp);
-
-
 
 function arrival() {
   var sum = Math.random();
@@ -337,8 +328,6 @@ function arrival() {
   var resultUp = Math.ceil(total);
 
   var Arrival = document.getElementById("arrivalNum");
-
-
 
   Arrival.innerText = resultUp;
 }
@@ -503,62 +492,71 @@ var swiper = new Swiper("#con4", {
 
 // weather.js
 
-const weather = document.querySelector(".js-weather");
+// var weather = document.getElementById('js-weather');
 
-// const API_KEY = "API KEY 입력";
-const COORDS = "coords";
 
-function getWeather(lat, lng) {
-  fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`
-    )
-    .then(function (response) { // .then = fetch가 완료 된 후 실행됨
-      return response.json(); // json형태로 변환
-    })
-    .then(function (json) {
-      const temperature = json.main.temp;
-      const place = json.name;
-      weather.innerText = `${temperature} @ ${place}`;
-    });
-}
+// const getJSON = function (url, callback) {
+//   const xhr = new XMLHttpRequest();
+//   xhr.open('GET', url, true);
+//   xhr.responseType = 'json';
+//   xhr.onload = function () {
+//     const status = xhr.status;
+//     if (status === 200) {
+//       callback(null, xhr.response);
+//     } else {
+//       callback(status, xhr.response);
+//     }
+//   };
+//   xhr.send();
+// };
 
-function saveCoords(coordsObj) { // localStorage에 저장
-  localStorage.setItem(COORDS, JSON.stringify(coordsObj));
-}
+// getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
+//   function (err, data) {
+//     if (err !== null) {
+//       alert('Unexpected error occured.' + err);
+//     } 
 
-function handleGeoSucces(position) { // 요청 수락
-  const latitude = position.coords.latitude;
-  const longitude = position.coords.longitude;
-  const coordsObj = {
-    latitude,
-    longitude,
+//     else {
+//       weather.innerText = (`${data.main.temp}°
+//       Wind ${data.wind.speed}m/s
+//       Humidity ${data.main.humidity}%
+//       High ${data.main.temp_max}°
+//       Low ${data.main.temp_min}°`);
+//     }
+//   });
+
+
+
+
+
+
+
+$(document).ready(function () {
+  let weatherIcon = {
+    '01': 'fas fa-sun',
+    '02': 'fas fa-cloud-sun',
+    '03': 'fas fa-cloud',
+    '04': 'fas fa-cloud-meatball',
+    '09': 'fas fa-cloud-sun-rain',
+    '10': 'fas fa-cloud-showers-heavy',
+    '11': 'fas fa-poo-storm',
+    '13': 'far fa-snowflake',
+    '50': 'fas fa-smog'
   };
-  saveCoords(coordsObj); // localStorage에 저장 함수
-}
-
-function handleGeoError() { // 요청 거절
-  console.log("Not allowed.");
-}
-
-function askForCoords() { // 사용자 위치 요청 (요청 수락, 요청 거절)
-  navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
-}
-
-function loadCoords() {
-  const loadedCoords = localStorage.getItem(COORDS); // localStorage에서 위치정보 가져옴
-  if (loadedCoords === null) { // 위치 정보가 없으면
-    askForCoords(); // 위치 정보 요청 함수
-  } else {
-    const parseCoords = JSON.parse(loadedCoords); // json형식을 객체 타입으로 바꿔서 저장
-    getWeather(parseCoords.latitude, parseCoords.longitude); // 날씨 요청 함수
-  }
-}
-
-function init() {
-  loadCoords();
-}
-
-init();
+  $.ajax({
+    url: 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
+    dataType: 'json',
+    type: 'GET',
+    success: function (data) {
+      var $Icon = (data.weather[0].icon).substr(0, 2);
+      var $Temp = Math.floor(data.main.temp) + 'º';
+      var $city = data.name;
+      $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
+      $('.CurrTemp').prepend($Temp);
+      $('.City').append($city);
+    }
+  })
+});
 
 
 
@@ -574,11 +572,14 @@ init();
 
 
 
-// inspiration
 
 
 
-const boxes = document.querySelectorAll('.box');
+  // inspiration
+
+
+
+  const boxes = document.querySelectorAll('.box');
 
 const config = {
   threshold: 0.5
