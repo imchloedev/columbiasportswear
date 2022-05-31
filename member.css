@@ -16,6 +16,7 @@
 
 .member_mainWrapper {
   border: 1px solid #eee;
+  border-radius: 20px;
 }
 
 @media (min-width: 1041px) {
@@ -134,10 +135,12 @@
 
 .loginWrapper .loginBtn button {
   width: 100%;
-  padding: 18px 0;
+  height: 48px;
   border: 1px solid #0070d2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border-radius: 50px;
+  color: #0070d2;
 }
 
 .loginWrapper .loginBtn button:hover {
@@ -332,10 +335,12 @@
 
 .createBtn button {
   width: 100%;
-  padding: 18px 0;
+  height: 48px;
   border: 1px solid #0070d2;
+  border-radius: 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  color: #0070d2;
 }
 
 .createBtn button:hover {

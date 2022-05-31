@@ -141,12 +141,12 @@ video {
 
 input,
 select,
-option {
+option, textarea {
   font-family: 'Montserrat', sans-serif;
 }
 
 input,
-select {
+select, textarea {
   outline: none;
 }
 
@@ -386,16 +386,16 @@ header.topFixed {
   }
 }
 
-.board .menu_title {
+.customerCare .menu_title {
   background: none;
   cursor: pointer;
 }
 
-.board .menu_title:hover {
+.customerCare .menu_title:hover {
   background-color: white;
 }
 
-.board .menu_title::before {
+.customerCare .menu_title::before {
   content: "";
   display: none;
 }

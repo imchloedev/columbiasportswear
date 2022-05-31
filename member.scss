@@ -59,6 +59,7 @@ $blue: #0070d2;
 
 .member_mainWrapper {
   border: 1px solid #eee;
+  border-radius: 20px;
 
   @include laptop {
     max-width: 600px;
@@ -205,10 +206,11 @@ $blue: #0070d2;
 
     button {
       width: 100%;
-      padding: 18px 0;
+      height: 48px;
       border: 1px solid $blue;
       transition: all 0.3s;
-
+      border-radius: 50px;
+      color: $blue;
 
 
       &:hover {
@@ -445,9 +447,11 @@ $blue: #0070d2;
 
   button {
     width: 100%;
-    padding: 18px 0;
+    height: 48px;
     border: 1px solid $blue;
+    border-radius: 50px;
     transition: all 0.3s;
+    color: $blue;
 
 
 

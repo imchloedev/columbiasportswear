@@ -182,12 +182,12 @@ video {
 
 input,
 select,
-option {
+option, textarea {
   font-family: 'Montserrat', sans-serif;
 }
 
 input,
-select {
+select, textarea {
   outline: none;
 }
 
@@ -463,7 +463,7 @@ header.topFixed {
 }
 
 
-.board {
+.customerCare {
 
   .menu_title {
     background: none;

@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
   <title>Columbia Sportswear</title>
+
+
   <link rel="stylesheet" href="style.css">
   <style type="text/css"></style>
+
+  <link rel="stylesheet" href="customer.css">
+
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -41,10 +46,8 @@
 </head>
 
 
-
-
-
 <body>
+
 
 
   <header class="header">
@@ -53,7 +56,7 @@
       <div class="header_wrapper">
 
         <div class="logoBox">
-          <a href="#" class="logo">
+          <a href="../index.html" class="logo">
             <span>logo</span>
           </a>
         </div>
@@ -312,10 +315,10 @@
 
               </div>
             </div>
-            
-         
-        <!-- pc nav -->
-            
+
+
+            <!-- pc nav -->
+
 
 
             <div class="pc_navContainer">
@@ -548,6 +551,8 @@
 
                     <li class="customerCare">
                       <a href="customer.html" class="menu_title">CUSTOMER CARE</a>
+
+                      <!-- customerCare 로 이동하기 -->
                     </li>
 
 
@@ -613,12 +618,12 @@
                 <input type="text" name="searhlap" placeholder="Search" required>
                 <button type="submit">Submit</button>
               </form>
-             
+
 
               <div class="popularSearch">
                 <p>Popular searches</p>
                 <ul>
-                  <li><a href="javascript:void(0)" >Jackets</a></li>
+                  <li><a href="javascript:void(0)">Jackets</a></li>
                   <li><a href="javascript:void(0)">Hat</a></li>
                   <li><a href="javascript:void(0)">Pants</a></li>
                   <li><a href="javascript:void(0)">Shorts</a></li>
@@ -646,287 +651,150 @@
 
 
 
-  <main>
-    <div class="main_container">
 
-      <div class="main_wrapper">
 
-        <div class="swiper main_swiper">
+  <div class="customer_main" role="main">
 
-          <div class="swiper-wrapper">
+    <div class="customer_main_container">
 
-            <div class="swiper-slide main_slide m1">
+      <div class="customerSearch">
+        <div class="customerSearch_container">
+          <h2>Columiba <br> customer care center</h2>
+          <form class="customerSearch_input">
+            <input type="text" name="searhlap" placeholder="Search" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
 
-              <div class="main-copy m1-copy">
-                <h3>MADE FOR EXPLORERS</h3>
-                <h1>PANTS FOR AN ACTIVITY</h1>
-                <p>#EVERYDAY #HIKING #PANTS</p>
-                <button>DETAIL VIEW</button>
-              </div>
 
+
+      <div class="customerEmail">
+
+        <div class="customerEmail_container">
+
+
+          <fieldset class="customerEmail_inner">
+
+            <div class="customerEmail-copy">
+              <h3>Email Us</h3>
+              <p>Have a question? <br> We're on standby to help. Fill out this form and our Concierge team will be in touch
+                as
+                soon as possible.</p>
             </div>
 
-            <div class="swiper-slide main_slide m2">
-              <div class="main-copy m2-copy">
-                <h3>MADE FOR EXPLORERS</h3>
-                <h1>PANTS FOR AN ACTIVITY</h1>
-                <p>#EVERYDAY #HIKING #PANTS</p>
-                <button>DETAIL VIEW</button>
+            <form class="customerEmail_content">
+
+              <div class="customerEmail_option">
+                <select name="helpQuestion" id="">
+                  <option class="select-option select-option_00" label="What do you need help with?" value="">What do you need help with?
+                  </option>
+                  <option class="select-option" label="Styling advice" value="01">Styling advice</option>
+                  <option class="select-option" label="Modify an existing order" value="02">Modify an existing order
+                  </option>
+                  <option class="select-option" label="Product inquiry" value="03">Product inquiry</option>
+                  <option class="select-option" label="Return or exchange inquiry" value="04">Return or exchange inquiry
+                  </option>
+                  <option class="select-option" label="Shipping or tracking inquiry" value="05">Shipping or tracking
+                    inquiry</option>
+                  <option class="select-option" label="Other" value="06">Other</option>
+                </select>
+                <label for="helpQuestion">
+                  <span>
+                    What do you need help with?
+                  </span>
+                </label>
               </div>
 
-            </div>
 
-            <div class="swiper-slide main_slide m3">
-              <div class="main-copy m3-copy">
-                <h3>MADE FOR EXPLORERS</h3>
-                <h1>PANTS FOR AN ACTIVITY</h1>
-                <p>#EVERYDAY #HIKING #PANTS</p>
-                <button>DETAIL VIEW</button>
+
+              <div class="customerEmail_iput">
+                <input type="text"
+                  name="contactus_firstname" value="" maxlength="40" placeholder="First Name" required>
+                <label for="contactus_firstname">
+                  <span>
+                    First Name
+                  </span>
+                </label>
               </div>
-            </div>
 
 
-          </div>
+              <div class="customerEmail_iput">
+                <input id="contactus_lastname" type="text"
+                  name="contactus_lastname" value="" maxlength="40" placeholder="Last Name" required>
+                <label for="contactus_lastname">
+                  <span>
+                    Last Name
+                  </span>
+                </label>
+              </div>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+              <div class="customerEmail_iput">
+                <input id="contactus_email" type="text"
+                  name="contactus_email" value="" maxlength="50" autocapitalize="off" autocomplete="email"
+                  autocorrect="off" placeholder="Email Address" required>
+                <label for="contactus_email">
+                  <span>
+                    Email Address
+                  </span>
+                </label>
+              </div>
+
+
+              <div class="customerEmail_iput">
+                <input class="input-text float-input" id="contactus_orderno" type="text" name="contactus_orderno"
+                  value="" maxlength="50" placeholder="Order # (Optional)">
+                <label for="contactus_orderno">
+                  <span>
+                    Order #
+                  </span>
+                  <span class="body_2 optionalfield">(Optional)</span>
+                </label>
+              </div>
+
+
+              <div class="customerEmail_message">
+                <label for="contactus_message">
+                  <span>
+                    Message
+                  </span>
+                </label>
+                <textarea class="input-textarea"
+                  id="contactus_message" name="contactus_message" maxlength="5000" rows="8" cols="40"
+                  placeholder="Message" onkeyup="counter(this, 5000)"></textarea>
+
+                  <!-- 남은 숫자 카운트 스크립트 사용 -->
+                <span class="form-caption">You have <span id="messagecount">0</span> of 5000
+                  characters.</span>
+              </div>
+
+
+              <div class="customerEmail_send">
+                <button type="submit" onclick="mailSend()">SEND</button>
+              </div>
+
+            </form>
+
+          </fieldset>
+
+
         </div>
 
       </div>
 
-    </div>
-  </main>
 
 
-
-
-
-
-  <article class="ranking" data-aos="fade-up">
-
-    <div class="rank_bg"></div>
-
-    <div class="ranking_container">
-
-      <div class="ranking_wrapper">
-
-
-
-        <section class="rank_title">
-
-          <div class="rank_titleBox">
-            <div>
-              <span>COLUMBIA's</span>
-              <h2>Trending Now</h2>
-              <!-- <button>SHOP NOW</button> -->
-            </div>
-
-            <div class="rankTime">
-              <span>ON</span>
-              <div onload="clock()">
-                <div id="clock"></div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-
-        <section class="rank_swiper_container">
-
-          <div class="swiper rank_swiper">
-
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide rank_slide">
-
-                <div class="rankbox">
-
-                  <div class="rankNum">1</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod1">
-                    <img class="img1" src="img/products/product_01_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_01_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>Short Sleeve Shirt</p>
-                    <!-- <span>$19.58</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="swiper-slide rank_slide">
-                <div class="rankbox">
-
-                  <div class="rankNum">2</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod2">
-                    <img class="img1" src="img/products/product_02_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_02_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>Frazier Spire™ Crew</p>
-                    <!-- <span>$39.90</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide rank_slide">
-
-                <div class="rankbox">
-
-                  <div class="rankNum">3</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod3">
-                    <img class="img1" src="img/products/product_03_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_03_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>Hatana™ Max OutDry™ Shoe</p>
-                    <!-- <span>$120.00</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="swiper-slide rank_slide">
-                <div class="rankbox">
-
-                  <div class="rankNum">4</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod4">
-                    <img class="img1" src="img/products/product_04_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_04_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>ROC™ II Ball Cap</p>
-                    <!-- <span>$120.00</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="swiper-slide rank_slide">
-                <div class="rankbox">
-
-                  <div class="rankNum">5</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod5">
-                    <img class="img1" src="img/products/product_05_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_05_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>WILDONE™ ANTHEM</p>
-                    <!-- <span>$120.00</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="swiper-slide rank_slide">
-                <div class="rankbox">
-
-                  <div class="rankNum">6</div>
-
-                  <a href="javascript:void(0)" class="rank_product prod6">
-                    <img class="img1" src="img/products/product_06_a.png" alt="">
-
-                    <img class="img2" src="img/products/product_06_b.png" alt="">
-                  </a>
-
-                  <div class="like">
-                    <span>like</span>
-                  </div>
-
-                  <div class="rank_copy">
-                    <p>Wilkin Strait Brook™ III Vest</p>
-                    <!-- <span>$120.00</span>
-                    <button>Add to cart</button> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-          </div>
-
-          <div id="rankNext" class="swiper-button-next"></div>
-          <div id="rankPrev" class="swiper-button-prev"></div>
-
-
-        </section>
-
-
-
-
-
-
-
-
+      <div>
 
       </div>
 
-    </div>
-
-  </article>
 
 
 
-  <article class="video">
 
-    <div class="video_wrapper">
 
-      <div class="videoBox">
-        <video autoplay muted loop src="video/pfg_pc.mp4"></video>
 
-        <video autoplay muted loop src="video/pfg_m.mp4"></video>
-      </div>
-
-      <div class="video-copy">
-        <span>MEET</span>
-        <h3>OUR EXCLUSIVE</h3>
-        <h2>PERFORMANCE FISHING GEAR</h2>
-
-        <button><span>SHOP NOW</span></button>
-      </div>
 
 
 
@@ -935,788 +803,27 @@
 
 
 
-  </article>
 
 
 
 
-  <article class="product-grid" data-aos="fade-up">
 
-    <div class="grid_container">
 
-      <section class="gridtitle">
 
-        <div class="grid_titleBox">
-          <div>
-            <span>WEEKLY</span>
-            <h2>NEW ARRIVALS</h2>
-            <!-- <button>SHOP NOW</button> -->
-          </div>
 
-          <div class="arrival">
-            <span onclick="arrival()" id="newNum"></span>
-            <div>
-              <div id="arrivalNum">42</div>
-            </div>
-          </div>
-        </div>
 
-      </section>
 
 
-      <section class="tabWrapper">
 
-        <!-- tab menu -->
-        <div class="swiper tabSwiper">
-          <ul class="tab-menu swiper-wrapper">
-            <li class="swiper-slide" data-id="con1">MEN</li>
-            <li class="swiper-slide" data-id="con2">WOMEN</li>
-            <li class="swiper-slide" data-id="con3">KIDS</li>
-            <li class="swiper-slide" data-id="con4">FOOTWEAR</li>
-          </ul>
-          <div class="swiper-scrollbar"></div>
-        </div>
+  </div>
 
 
 
-        <!-- tab content -->
-        <div class="swiper tabCon">
 
-          <div class="swiper-wrapper">
 
-            <!-- men -->
-            <div class="swiper-slide">
-              <div class="swiper con1Swiper" id="con1">
-                <div class="swiper-wrapper">
 
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_13_a.png" alt="">
 
-                        <img class="img2" src="img/products/product_13_b.png" alt="">
-                      </a>
 
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_14_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_14_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_15_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_15_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_16_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_16_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_17_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_17_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div id="con1_next" class="swiper-button-next"></div>
-                <div id="con1_prev" class="swiper-button-prev"></div>
-              </div>
-            </div>
-
-
-            <!-- women -->
-            <div class="swiper-slide">
-
-              <div class="swiper con1Swiper" id="con2">
-                <div class="swiper-wrapper">
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_18_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_18_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_19_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_19_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- kids -->
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_20_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_20_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_21_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_21_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_22_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_22_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div id="con2_next" class="swiper-button-next"></div>
-                <div id="con2_prev" class="swiper-button-prev"></div>
-              </div>
-
-
-            </div>
-
-
-            <!-- foot -->
-            <div class="swiper-slide">
-
-              <div class="swiper con1Swiper" id="con3">
-                <div class="swiper-wrapper">
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_23_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_23_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_24_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_24_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_25_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_25_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_26_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_26_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_27_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_27_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                </div>
-
-
-                <div id="con3_next" class="swiper-button-next"></div>
-                <div id="con3_prev" class="swiper-button-prev"></div>
-              </div>
-
-            </div>
-
-
-
-            <div class="swiper-slide">
-              <div class="swiper con1Swiper" id="con4">
-                <div class="swiper-wrapper">
-
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_28_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_28_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_29_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_29_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_30_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_30_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_31_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_31_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="swiper-slide">
-                    <div class="arrive_box">
-                      <a href="javascript:void(0)" class="arrive_product prod1">
-                        <img class="img1" src="img/products/product_32_a.png" alt="">
-
-                        <img class="img2" src="img/products/product_32_b.png" alt="">
-                      </a>
-
-                      <div class="like">
-                        <span>like</span>
-                      </div>
-
-                      <div class="rank_copy">
-                        <p>Short Sleeve Shirt</p>
-                        <!-- <span>$19.58</span>
-                        <button>Add to cart</button> -->
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-
-
-                <div id="con4_next" class="swiper-button-next"></div>
-                <div id="con4_prev" class="swiper-button-prev"></div>
-              </div>
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-    </div>
-
-
-    </section>
-
-
-
-    </div>
-
-  </article>
-
-
-
-
-
-
-
-  <article class="feature">
-
-    <div class="feature_container">
-
-      <div class="feature_bg" data-aos="fade-up">
-
-        <div class="feature_content">
-
-
-          <div class="feature_copy">
-            <h2>Feature</h2>
-          </div>
-
-
-          <div class="feature_product">
-            <img src="img/feature/feature_product.png" alt="">
-          </div>
-
-
-          <div class="feature_icon">
-            <div>
-              <img src="img/feature/icon1.png" alt="">
-            </div>
-
-            <div>
-              <img src="img/feature/icon2.png" alt="">
-            </div>
-
-            <div>
-              <img src="img/feature/icon3.png" alt="">
-            </div>
-
-            <div>
-              <img src="img/feature/icon4.png" alt="">
-            </div>
-          </div>
-
-
-          <div class="feature_info">
-            <h3>OutDry™ Extreme Mesh Hooded Shell <img src="img/feature/outdry.png" alt="OutDry"></h3>
-
-
-            <button>SHOP NOW</button>
-          </div>
-
-        </div>
-
-
-
-
-      </div>
-
-    </div>
-
-  </article>
-
-
-
-
-  <article class="banner">
-
-    <div class="banner_container">
-
-      <a href="#" class="left_banner" data-aos="fade-right">
-        <div class="banner-copy">
-          <h2>WANDER FREELY</h2>
-          <button>SHOP HIKING</button>
-        </div>
-      </a>
-
-      <a href="#" class="right_banner" data-aos="fade-left">
-        <div class="banner-copy">
-          <h2>SET UP SKI & SNOW</h2>
-          <button>SHOP SKING</button>
-        </div>
-      </a>
-
-    </div>
-
-  </article>
-
-
-
-
-  <article class="newsletter">
-
-
-    <div class="news_container">
-
-
-
-      <div class="news-copy">
-        <div class="email_icon"><img src="img/icon/email.png" alt=""></div>
-        <h3>Come play in our backyard</h3>
-        <p>Be first to hear about new products, sales, and more.</p>
-        <button>SING UP FOR EMAIL</button>
-      </div>
-
-
-      <div class="news_bg">
-        <img src="img/banner1.png" alt="">
-
-      </div>
-
-
-
-    </div>
-
-  </article>
-
-
-
-
-  <article class="inspo">
-
-    <div class="inspo_container">
-
-      <div class="inscopy">
-        <h2>Get inspired</h2>
-        <span>#columbia_us</span>
-      </div>
-
-      <div class="inspo_wrapper">
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_01.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_02.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_03.jpg" alt="">
-        </a>
-
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_04.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/bg12.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/bg14.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_07.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_08.jpg" alt="">
-        </a>
-
-        <a href="javascript:void(0)" class="box">
-          <img src="img/grid/grid_ph_09.jpg" alt="">
-        </a>
-
-      </div>
-
-    </div>
-
-  </article>
-
-
-
-
-
-
-
-
-
-
-
-
-  <article class="shop_info">
-
-    <div class="info_container">
-
-      <div class="info_wrapper">
-
-        <div class="info_box">
-          <div class="contact">
-            <h4>Contact Us</h4>
-            <p>5am - 8pm Mon - Fri <br>
-              Closed Sat / Sun</p>
-          </div>
-
-          <a href="javascript:void(0)">Learn More </a>
-        </div>
-
-
-        <div class="info_box">
-          <div class="customer">
-            <h4>Customer Care</h4>
-            <p>Need any help? We support customer service including Email Us, Live Chat, and Phone Call.</p>
-          </div>
-          <a href="javascript:void(0)">Learn More </a>
-        </div>
-
-        <div class="info_box">
-          <div class="gift">
-            <h4>Gift Cards </h4>
-            <p>Want a gift card? Check our gift cards </p>
-          </div>
-
-          <a href="javascript:void(0)">Learn More </a>
-        </div>
-
-
-        <div class="info_box">
-          <div class="store">
-            <h4>Find a Store</h4>
-            <p>See something you like? Check store inventory to find it in your local boutique.</p>
-          </div>
-
-          <a href="javascript:void(0)">Learn More </a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </article>
 
 
 
@@ -1894,7 +1001,21 @@
 
 
 
+
+
+
+
+
+
+
+
   <script type="text/javascript" src="home.js"></script>
+
+  <script type="text/javascript" src="member.js"></script>
+
+
+  <script type="text/javascript" src="customer.js"></script>
+
 
 
 
