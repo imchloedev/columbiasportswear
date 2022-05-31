@@ -185,10 +185,25 @@ select {
 }
 
 .weatherinfo .City {
-  color: #0070d2;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.fa-sun {
+  color: #f55a17;
+}
+
+.fa-cloud-sun {
+  color: #aaa;
+}
+
+.fa-cloud {
+  color: #474747;
+}
+
+.fa-cloud-meatball {
+  color: #454545;
 }
 
 .bodyscroll {

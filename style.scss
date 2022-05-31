@@ -237,7 +237,7 @@ select {
   
 
   .City {
-    color: $blue;
+    // color: $blue;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -245,6 +245,24 @@ select {
 }
 
 
+
+// icon 
+
+.fa-sun {
+  color: rgb(245, 90, 23);
+}
+
+.fa-cloud-sun {
+  color: #aaa;
+}
+
+.fa-cloud {
+  color: #474747;
+}
+
+.fa-cloud-meatball {
+  color: rgb(69, 69, 69);
+}
 
 
 
