@@ -45,7 +45,6 @@ window.onscroll = function sticky() {
 
 $(document).ready(function () {
 
-
   // input click
 
   $(".inputBox span").click(function () {
@@ -54,13 +53,12 @@ $(document).ready(function () {
 
 
 
-
-
   // mobile nav button 
 
   $('.navBtn').on('click', function () {
     this.classList.toggle('openNav');
-    $('.mobile_navWrapper').slideToggle(300);
+    $('.navWrapper').slideToggle(300);
+    $('header').toggleClass('openWhite');
 
     $('body').toggleClass('bodyscroll');
   });
@@ -68,8 +66,8 @@ $(document).ready(function () {
 
 
 
-  // mobile nav
-  $('.mobile_nav .mainmenu > li').on('click', function () {
+  //  nav
+  $('.mainmenu > li').on('click', function () {
     $('.menu_title').toggleClass('openTitle');
     $(this).find('.submenu').slideToggle(300);
 
@@ -78,14 +76,6 @@ $(document).ready(function () {
   });
 
 
-
-  // pc nav
-  $('.pc_nav .mainmenu > li').click(function () {
-    $('.menu_title').toggleClass('openTitle');
-    $(this).find('.submenu').slideToggle(300);
-    $(this).siblings().find('.menu_title').removeClass('openTitle');
-    $(this).siblings().find('.submenu').hide();
-  });
 
 
 
@@ -228,7 +218,7 @@ setInterval(clock, 1000); // 1초마다 실행
 // rank swiper
 
 var rankswiper = new Swiper(".rank_swiper", {
-  slidesPerView: '1',
+  slidesPerView: '1.5',
   spaceBetween: 20,
   speed: 1000,
 
@@ -242,7 +232,7 @@ var rankswiper = new Swiper(".rank_swiper", {
 
 
     648: {
-      slidesPerView: 3, //브라우저가 768보다 클 때
+      slidesPerView: 2, //브라우저가 768보다 클 때
       spaceBetween: 20,
     },
 
@@ -388,6 +378,10 @@ var swiper = new Swiper("#con1", {
 
   breakpoints: {
 
+    648: {
+      slidesPerView: 2,
+    },
+
     1041: {
       slidesPerView: 2.5,
 
@@ -412,6 +406,9 @@ var swiper = new Swiper("#con2", {
   spaceBetween: 15,
 
   breakpoints: {
+    648: {
+      slidesPerView: 2,
+    },
 
     1041: {
       slidesPerView: 2.5,
@@ -436,6 +433,9 @@ var swiper = new Swiper("#con3", {
   spaceBetween: 15,
 
   breakpoints: {
+    648: {
+      slidesPerView: 2,
+    },
 
     1041: {
       slidesPerView: 2.5,
@@ -461,6 +461,10 @@ var swiper = new Swiper("#con4", {
   spaceBetween: 15,
 
   breakpoints: {
+
+    648: {
+      slidesPerView: 2,
+    },
 
     1041: {
       slidesPerView: 2.5,
@@ -519,40 +523,31 @@ var swiper = new Swiper("#con4", {
 
 
 
-// function remaindTime() {
-//   var now = new Date(); //현재시간을 구한다. 
-//   var open = new Date(2022, 12, 11, 11, 00, 00);
+const remainDay = document.querySelector("#time_days");
+const remainHour = document.querySelector("#time_hours");
+const remainMin = document.querySelector("#time_mins");
+const remainSec = document.querySelector("#time_secs");
 
-//   var nt = now.getTime(); // 현재의 시간만 가져온다
-//   var ot = open.getTime(); // 오픈시간만 가져온다
 
-//   if (nt < ot) { //현재시간이 오픈시간보다 이르면 오픈시간까지의 남은 시간을 구한다.   
-//     sec = parseInt(ot - nt) / 1000;
-//     hour = parseInt(sec / 60 / 60);
-//     sec = (sec - (hour * 60 * 60));
-//     min = parseInt(sec / 60);
-//     sec = parseInt(sec - (min * 60));
+function diffDay() {
+  const masTime = new Date("2022-12-31");
+  const todayTime = new Date();
 
-//     if (hour < 10) {
-//       hour = "0" + hour;
-//     }
-//     if (min < 10) {
-//       min = "0" + min;
-//     }
-//     if (sec < 10) {
-//       sec = "0" + sec;
-//     }
-//     $("#time_hours").html(hour);
-//     $("#time_mins").html(min);
-//     $("#time_secs").html(sec);
-//   } else { //현재시간이 종료시간보다 크면
-//     $("#d-day-hour").html('00');
-//     $("#d-day-min").html('00');
-//     $("#d-day-sec").html('00');
-//   }
-// }
-// setInterval(remaindTime, 1000);
+  const diff = masTime - todayTime;
 
+  const diffDay = String(Math.floor(diff / (1000 * 60 * 60 * 24)));
+  const diffHour = String(Math.floor((diff / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+  const diffMin = String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, "0");
+  const diffSec = String(Math.floor(diff / 1000 % 60)).padStart(2, "0");
+
+  remainDay.innerHTML = `${diffDay}<span>DAYS</span>`;
+  remainHour.innerHTML = `${diffHour}<span>HRS</span>`;
+  remainMin.innerHTML = `${diffMin}<span>MINS</span>`;
+  remainSec.innerHTML = `${diffSec}<span>SECS</span>`;
+}
+
+diffDay();
+setInterval(diffDay, 1000);
 
 
 
@@ -596,9 +591,7 @@ getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602
   function (err, data) {
     if (err !== null) {
       alert('Unexpected error occured.' + err);
-    } 
-
-    else {
+    } else {
       weather.innerText = (`${data.main.temp}°
       Wind ${data.wind.speed}m/s
       Humidity ${data.main.humidity}%
@@ -647,10 +640,7 @@ getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602
 
 
 
-
-
-
-
+// icon + weather
 
 // getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric', function (err, data) {
 //   if (err !== null) {
@@ -721,4 +711,35 @@ let observer = new IntersectionObserver(function (entries, self) {
 
 boxes.forEach(box => {
   observer.observe(box);
+});
+
+
+
+
+
+
+
+
+
+// top 버튼
+
+$(document).ready(function () {
+  $(".topBtn").hide(); // 탑 버튼 숨김
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        // 스크롤 내릴 표시
+        $('.topBtn').fadeIn(200);
+      } else {
+        $('.topBtn').fadeOut(200);
+      }
+    });
+    $('.topBtn').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400);
+      // 탑 이동 스크롤 속도
+      return false;
+    });
+  });
 });
