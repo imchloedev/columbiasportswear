@@ -1020,6 +1020,7 @@ header.topFixed {
   width: 100%;
   // height: 400px;
   background-color: white;
+    border-bottom: 1px solid #828282;
   z-index: 10;
   display: none;
 }
@@ -1091,48 +1092,47 @@ header.topFixed {
   ul li {
     margin: 10px 20px;
     opacity: 0;
-    animation: upDown 2s alternate;
+    animation: upDown 1.5s alternate;
     animation-fill-mode: forwards;
  animation-iteration-count: 1;
 
 
     &:nth-child(1) {
       animation-delay: 0;
-   
       transform: translateY(0);
   
     }
 
     &:nth-child(2) {
-      animation-delay: 0.3s;
+      animation-delay: 0.2s;
 
       transform: translateY(0);
   
     }
 
     &:nth-child(3) {
-      animation-delay: 0.7s;
+      animation-delay: 0.4s;
     
       transform: translateY(0);
   
     }
 
     &:nth-child(4) {
-      animation-delay: 1.2s;
+      animation-delay: 0.6s;
 
       transform: translateY(0);
   
     }
 
     &:nth-child(5) {
-      animation-delay: 1.7s;
+      animation-delay: 0.8s;
 
       transform: translateY(0);
   
     }
 
     &:nth-child(6) {
-      animation-delay: 2.2s;
+      animation-delay: 1.0s;
 
       transform: translateY(0);
   

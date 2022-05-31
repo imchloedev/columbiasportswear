@@ -845,6 +845,7 @@ header.topFixed {
   top: 0;
   width: 100%;
   background-color: white;
+  border-bottom: 1px solid #828282;
   z-index: 10;
   display: none;
 }
@@ -907,8 +908,8 @@ header.topFixed {
 .popularSearch ul li {
   margin: 10px 20px;
   opacity: 0;
-  -webkit-animation: upDown 2s alternate;
-          animation: upDown 2s alternate;
+  -webkit-animation: upDown 1.5s alternate;
+          animation: upDown 1.5s alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
@@ -923,36 +924,36 @@ header.topFixed {
 }
 
 .popularSearch ul li:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .popularSearch ul li:nth-child(3) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .popularSearch ul li:nth-child(4) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .popularSearch ul li:nth-child(5) {
-  -webkit-animation-delay: 1.7s;
-          animation-delay: 1.7s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .popularSearch ul li:nth-child(6) {
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
