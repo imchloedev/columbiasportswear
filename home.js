@@ -482,6 +482,88 @@ var swiper = new Swiper("#con4", {
 
 
 
+// 남은 시간
+
+
+// function CountDownTimer(dt, id) {
+//   var end = new Date(dt);
+//   var _second = 1000;
+//   var _minute = _second * 60;
+//   var _hour = _minute * 60;
+//   var _day = _hour * 24;
+//   var timer;
+
+//   function showRemaining() {
+//     var now = new Date();
+//     var distance = end - now;
+//     if (distance < 0) {
+//       clearInterval(timer);
+//       document.getElementById("time_left").innerText = '타임딜 종료됨';
+//       return;
+//     }
+//     var days = Math.floor(distance / _day);
+//     var hours = Math.floor((distance % _day) / _hour);
+//     var minutes = Math.floor((distance % _hour) / _minute);
+//     var seconds = Math.floor((distance % _minute) / _second);
+//     document.getElementById("time_days").innerText = days + 'Days ';
+//     document.getElementById("time_hours").innerText += hours + 'hrs ';
+//     document.getElementById("time_mins").innerText += minutes + 'mins ';
+//     document.getElementById("time_secs").innerText += seconds + 'secs';
+//   }
+
+//   timer = setInterval(showRemaining, 1000);
+
+// }
+// CountDownTimer('12/31/2022 00:00:00', 'timeDeal'); // 2020-12-06 오후10시 50분까지
+
+
+
+
+// function remaindTime() {
+//   var now = new Date(); //현재시간을 구한다. 
+//   var open = new Date(2022, 12, 11, 11, 00, 00);
+
+//   var nt = now.getTime(); // 현재의 시간만 가져온다
+//   var ot = open.getTime(); // 오픈시간만 가져온다
+
+//   if (nt < ot) { //현재시간이 오픈시간보다 이르면 오픈시간까지의 남은 시간을 구한다.   
+//     sec = parseInt(ot - nt) / 1000;
+//     hour = parseInt(sec / 60 / 60);
+//     sec = (sec - (hour * 60 * 60));
+//     min = parseInt(sec / 60);
+//     sec = parseInt(sec - (min * 60));
+
+//     if (hour < 10) {
+//       hour = "0" + hour;
+//     }
+//     if (min < 10) {
+//       min = "0" + min;
+//     }
+//     if (sec < 10) {
+//       sec = "0" + sec;
+//     }
+//     $("#time_hours").html(hour);
+//     $("#time_mins").html(min);
+//     $("#time_secs").html(sec);
+//   } else { //현재시간이 종료시간보다 크면
+//     $("#d-day-hour").html('00');
+//     $("#d-day-min").html('00');
+//     $("#d-day-sec").html('00');
+//   }
+// }
+// setInterval(remaindTime, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
 
 // weather
 
@@ -531,6 +613,7 @@ var swiper = new Swiper("#con4", {
 
 
 
+
 $(document).ready(function () {
   let weatherIcon = {
     '01': 'fas fa-sun',
@@ -554,7 +637,8 @@ $(document).ready(function () {
       $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
       $('.CurrTemp').prepend($Temp);
       $('.City').append($city);
-    }
+    },
+
   })
 });
 
@@ -568,6 +652,20 @@ $(document).ready(function () {
 
 
 
+// getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric', function (err, data) {
+//   if (err !== null) {
+//     alert('Sorry!' + err);
+//   } else {
+//     function (data) {
+//       var $Icon = (data.weather[0].icon).substr(0, 2);
+//       var $Temp = Math.floor(data.main.temp) + 'º';
+//       var $city = data.name;
+//       $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
+//       $('.CurrTemp').prepend($Temp);
+//       $('.City').append($city);
+//     },
+//   }
+// })
 
 
 
@@ -575,11 +673,28 @@ $(document).ready(function () {
 
 
 
-  // inspiration
 
 
 
-  const boxes = document.querySelectorAll('.box');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// inspiration
+
+
+
+const boxes = document.querySelectorAll('.box');
 
 const config = {
   threshold: 0.5
