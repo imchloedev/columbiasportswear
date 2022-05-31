@@ -137,7 +137,7 @@ h5 {
 a {
   transition: all 0.3s;
   color: #222;
-  cursor: auto;
+  cursor: default;
 }
 
 a:link {
@@ -199,11 +199,11 @@ select {
 // start
 
 
-// #js-weather {
-//   width: 240px;
-//   height: 100px;
-//   border: 1px solid gray;
-// }
+#js-weather {
+  width: 240px;
+  height: 100px;
+  border: 1px solid gray;
+}
 
 
 
@@ -214,6 +214,7 @@ select {
   text-align: center;
   margin-top: 140px;
   font-size: 24px;
+  border: 1px solid gray;
 
   >div:nth-child(1) {
     display: flex;

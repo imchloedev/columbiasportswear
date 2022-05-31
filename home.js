@@ -574,73 +574,73 @@ var swiper = new Swiper("#con4", {
 
 // weather.js
 
-// var weather = document.getElementById('js-weather');
+var weather = document.getElementById('js-weather');
 
 
-// const getJSON = function (url, callback) {
-//   const xhr = new XMLHttpRequest();
-//   xhr.open('GET', url, true);
-//   xhr.responseType = 'json';
-//   xhr.onload = function () {
-//     const status = xhr.status;
-//     if (status === 200) {
-//       callback(null, xhr.response);
-//     } else {
-//       callback(status, xhr.response);
-//     }
-//   };
-//   xhr.send();
-// };
-
-// getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
-//   function (err, data) {
-//     if (err !== null) {
-//       alert('Unexpected error occured.' + err);
-//     } 
-
-//     else {
-//       weather.innerText = (`${data.main.temp}°
-//       Wind ${data.wind.speed}m/s
-//       Humidity ${data.main.humidity}%
-//       High ${data.main.temp_max}°
-//       Low ${data.main.temp_min}°`);
-//     }
-//   });
-
-
-
-
-
-
-
-
-$(document).ready(function () {
-  let weatherIcon = {
-    '01': 'fas fa-sun',
-    '02': 'fas fa-cloud-sun',
-    '03': 'fas fa-cloud',
-    '04': 'fas fa-cloud-meatball',
-    '09': 'fas fa-cloud-sun-rain',
-    '10': 'fas fa-cloud-showers-heavy',
-    '11': 'fas fa-poo-storm',
-    '13': 'far fa-snowflake',
-    '50': 'fas fa-smog'
+const getJSON = function (url, callback) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'json';
+  xhr.onload = function () {
+    const status = xhr.status;
+    if (status === 200) {
+      callback(null, xhr.response);
+    } else {
+      callback(status, xhr.response);
+    }
   };
-  $.ajax({
-    url: 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
-    dataType: 'json',
-    type: 'GET',
-    success: function (data) {
-      var $Icon = (data.weather[0].icon).substr(0, 2);
-      var $Temp = Math.floor(data.main.temp) + 'º';
-      var $city = data.name;
-      $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
-      $('.CurrTemp').prepend($Temp);
-      $('.City').append($city);
-    },
+  xhr.send();
+};
 
-  })
-});
+getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
+  function (err, data) {
+    if (err !== null) {
+      alert('Unexpected error occured.' + err);
+    } 
+
+    else {
+      weather.innerText = (`${data.main.temp}°
+      Wind ${data.wind.speed}m/s
+      Humidity ${data.main.humidity}%
+      High ${data.main.temp_max}°
+      Low ${data.main.temp_min}°`);
+    }
+  });
+
+
+
+
+
+
+
+
+// $(document).ready(function () {
+//   let weatherIcon = {
+//     '01': 'fas fa-sun',
+//     '02': 'fas fa-cloud-sun',
+//     '03': 'fas fa-cloud',
+//     '04': 'fas fa-cloud-meatball',
+//     '09': 'fas fa-cloud-sun-rain',
+//     '10': 'fas fa-cloud-showers-heavy',
+//     '11': 'fas fa-poo-storm',
+//     '13': 'far fa-snowflake',
+//     '50': 'fas fa-smog'
+//   };
+//   $.ajax({
+//     url: 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
+//     dataType: 'json',
+//     type: 'GET',
+//     success: function (data) {
+//       var $Icon = (data.weather[0].icon).substr(0, 2);
+//       var $Temp = Math.floor(data.main.temp) + 'º';
+//       var $city = data.name;
+//       $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
+//       $('.CurrTemp').prepend($Temp);
+//       $('.City').append($city);
+//     },
+
+//   })
+// });
 
 
 
