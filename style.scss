@@ -1581,6 +1581,16 @@ main {
   .swiper-pagination {
     display: none !important;
   }
+
+  .swiper-wrapper {
+
+    .rank_slide:nth-child(1) {
+      
+      a {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 
@@ -2831,7 +2841,7 @@ footer {
   .mobile_footer_ul {
 
     >li {
-      padding: 16px 0;
+  
     }
 
     a {
@@ -2839,12 +2849,14 @@ footer {
     }
 
     span {
+      padding: 16px 0;
       color: white;
       font-weight: 600;
       display: block;
       background: url('img/icon/down-arrow-white.png') no-repeat;
       background-position: right center;
       background-size: 18px 18px;
+      border-bottom: 1px solid white;
       cursor: pointer;
     }
   }
@@ -2859,6 +2871,7 @@ footer {
   background: url('img/icon/up-arrow-white.png') no-repeat;
   background-position: right center;
   background-size: 18px 18px;
+  border-bottom: none;
 }
 
 

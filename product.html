@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>Columbia Sportswear</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+  <style type="text/css"></style>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/css/jquery.mb.YTPlayer.min.css">
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+    integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+  </script>
+
+
+
+  <script src="main.js"></script>
+
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+
+  <!-- scrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+
+  <!-- scrollTo -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollToPlugin.min.js"></script>
+
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+  <header class="header">
+
+    <div class="header_container">
+      <div class="header_wrapper">
+
+        <div class="logoBox">
+          <a href="#" class="logo">
+            <span>logo</span>
+          </a>
+        </div>
+
+        <div class="gnb">
+
+          <!-- background blur gnb box에 주기 -->
+          <div class="gnb_container">
+
+            <div class="navContainer">
+
+              <div class="navWrapper">
+
+                <nav class="nav">
+
+                  <ul class="mainmenu">
+
+                    <!-- men -->
+                    <li class="men">
+                      <a href="product.html" class="menu_title">MEN</a>
+
+                      <!-- product 페이지로 이동 -->
+
+                      <div class="submenu">
+                        <div class="sub_wrapper">
+
+                          <ul class="subsum">
+                            <li><a href="javascript:void(0)">New Arrivals</a></li>
+                            <li><a href="javascript:void(0)">Best Sellers</a></li>
+                            <li><a href="javascript:void(0)">Featured</a></li>
+                            <li><a href="javascript:void(0)">Sale</a></li>
+                          </ul>
+
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">CLOTHING</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Jackets</a></li>
+                                <li><a href="javascript:void(0)">Fleece</a></li>
+                                <li><a href="javascript:void(0)">Shirts</a></li>
+                                <li><a href="javascript:void(0)">Pants & Shorts</a></li>
+                                <li><a href="javascript:void(0)">Big & Tall</a></li>
+                                <li><a href="javascript:void(0)">PFG Fishing Gear</a></li>
+                                <li><a href="javascript:void(0)">Shoes</a></li>
+                                <li><a href="javascript:void(0)">Accessories</a></li>
+                                <li><a href="javascript:void(0)">Equipment</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subimg">
+                            <li>
+                              <a href="javascript:void(0)"></a>
+                              <span>SHOP NOW</span>
+                              <!-- img 백그라운드 -->
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- women -->
+                    <li class="women">
+                      <a href="javascript:void(0)" class="menu_title">WOMEN</a>
+
+                      <div class="submenu">
+                        <div class="sub_wrapper">
+
+                          <ul class="subsum">
+                            <li><a href="javascript:void(0)">New Arrivals</a></li>
+                            <li><a href="javascript:void(0)">Best Sellers</a></li>
+                            <li><a href="javascript:void(0)">Featured</a></li>
+                            <li><a href="javascript:void(0)">Sale</a></li>
+                          </ul>
+
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">CLOTHING</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Jackets</a></li>
+                                <li><a href="javascript:void(0)">Fleece</a></li>
+                                <li><a href="javascript:void(0)">Tops</a></li>
+                                <li><a href="javascript:void(0)">Bottoms</a></li>
+                                <li><a href="javascript:void(0)">Dresses</a></li>
+                                <li><a href="javascript:void(0)">Plus Sizes</a></li>
+                                <li><a href="javascript:void(0)">PFG Fishing Gear</a></li>
+                                <li><a href="javascript:void(0)">Shoes</a></li>
+                                <li><a href="javascript:void(0)">Accessories</a></li>
+                                <li><a href="javascript:void(0)">Equipment</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subimg">
+                            <li>
+                              <a href="javascript:void(0)"></a>
+                              <span>SHOP NOW</span>
+                              <!-- img 백그라운드 -->
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- kids -->
+                    <li class="kids">
+                      <a href="javascript:void(0)" class="menu_title">KIDS</a>
+
+                      <div class="submenu">
+                        <div class="sub_wrapper">
+
+                          <ul class="subsum">
+                            <li><a href="javascript:void(0)">New Arrivals</a></li>
+                            <li><a href="javascript:void(0)">Best Sellers</a></li>
+                            <li><a href="javascript:void(0)">Featured</a></li>
+                            <li><a href="javascript:void(0)">Sale</a></li>
+                          </ul>
+
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">BOYS CLOTHING</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Toddler & Baby</a></li>
+                                <li><a href="javascript:void(0)">Jackets</a></li>
+                                <li><a href="javascript:void(0)">Fleece</a></li>
+                                <li><a href="javascript:void(0)">Tops</a></li>
+                                <li><a href="javascript:void(0)">Bottoms</a></li>
+                                <li><a href="javascript:void(0)">PFG Fishing Gear</a></li>
+                                <li><a href="javascript:void(0)">Shoes</a></li>
+                                <li><a href="javascript:void(0)">Accessories</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">GIRLS CLOTHING</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Jackets</a></li>
+                                <li><a href="javascript:void(0)">Fleece</a></li>
+                                <li><a href="javascript:void(0)">Tops</a></li>
+                                <li><a href="javascript:void(0)">Bottoms</a></li>
+                                <li><a href="javascript:void(0)">Dresses</a></li>
+                                <li><a href="javascript:void(0)">Plus Sizes</a></li>
+                                <li><a href="javascript:void(0)">PFG Fishing Gear</a></li>
+                                <li><a href="javascript:void(0)">Shoes</a></li>
+                                <li><a href="javascript:void(0)">Accessories</a></li>
+                                <li><a href="javascript:void(0)">Equipment</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subimg">
+                            <li>
+                              <a href="javascript:void(0)"></a>
+                              <span>SHOP NOW</span>
+                              <!-- img 백그라운드 -->
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- activity -->
+                    <li class="act">
+                      <a href="javascript:void(0)" class="menu_title">ACTIVITY</a>
+
+                      <div class="submenu">
+                        <div class="sub_wrapper">
+
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">ACTIVITY</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Ski & Snow</a></li>
+                                <li><a href="javascript:void(0)">Hiking</a></li>
+                                <li><a href="javascript:void(0)">Fishing</a></li>
+                                <li><a href="javascript:void(0)">Hunting</a></li>
+                                <li><a href="javascript:void(0)">Trail Running</a></li>
+                                <li><a href="javascript:void(0)">Golf</a></li>
+                                <li><a href="javascript:void(0)">Camping</a></li>
+                                <li><a href="javascript:void(0)">Euipment</a></li>
+                                <li><a href="javascript:void(0)">Blankets & Bedding</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subimg">
+                            <li>
+                              <a href="javascript:void(0)"></a>
+                              <span>SHOP NOW</span>
+                              <!-- img 백그라운드 -->
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+
+
+                    <li class="sale">
+                      <a href="javascript:void(0)" class="menu_title">SALE</a>
+
+                      <div class="submenu">
+                        <div class="sub_wrapper">
+                          <ul class="subcon">
+                            <li>
+                              <a href="javascript:void(0)">ON SALE</a>
+                              <ul>
+                                <li><a href="javascript:void(0)">Ski & Snow</a></li>
+                                <li><a href="javascript:void(0)">Hiking</a></li>
+                                <li><a href="javascript:void(0)">Fishing</a></li>
+                                <li><a href="javascript:void(0)">Hunting</a></li>
+                                <li><a href="javascript:void(0)">Trail Running</a></li>
+                                <li><a href="javascript:void(0)">Golf</a></li>
+                                <li><a href="javascript:void(0)">Camping</a></li>
+                                <li><a href="javascript:void(0)">Euipment</a></li>
+                                <li><a href="javascript:void(0)">Blankets & Bedding</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <ul class="subimg">
+                            <li>
+                              <a href="javascript:void(0)"></a>
+                              <span>SHOP NOW</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="customerCare">
+                      <a href="customer.html" class="menu_title">CUSTOMER CARE</a>
+                      <!-- customerCare 로 이동하기 -->
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="gnb_mobileInner_utility">
+                  <a href="member.html">SIGN IN</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_utility">
+          <div class="header_utility_container">
+            <div class="inputBox">
+              <div>
+                <span></span>
+                <input type="text" name="searhlap" placeholder="Search" required>
+              </div>
+            </div>
+
+            <div class="profile_box">
+              <div class="profile_wrapper">
+                <a href="member.html"><span>profile</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_utility_mobile">
+          <div class="search_mobile">
+            <span>search</span>
+          </div>
+
+          <div class="navBtn">
+            <button>
+              <span class="navline1"></span>
+              <span class="navline2"></span>
+              <span class="navline3"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="searhWindow">
+          <div class="searchWindow_container">
+            <div class="searhWindow_wrapper">
+
+              <form class="search_inputBox">
+                <input type="text" name="searhlap" placeholder="Search" required>
+                <button type="submit">Submit</button>
+              </form>
+
+              <div class="popularSearch">
+                <p>Popular searches</p>
+                <ul>
+                  <li><a href="javascript:void(0)">Jackets</a></li>
+                  <li><a href="javascript:void(0)">Hat</a></li>
+                  <li><a href="javascript:void(0)">Pants</a></li>
+                  <li><a href="javascript:void(0)">Shorts</a></li>
+                  <li><a href="javascript:void(0)">Dresses</a></li>
+                  <li><a href="javascript:void(0)">Backpacks</a></li>
+                </ul>
+              </div>
+
+              <button class="searchClose"><span>close</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="product_main" role="main">
+    <div class="product_mainContainer">
+      <div class="product_mainWrapper">
+
+        <div class="product_breadcrumb">
+          <ul>
+            <li><a href="javascript:void(0)">Mens</a></li>
+            <li><a href="javascript:void(0)">Brig Peak Back Graphic Tee</a></li>
+          </ul>
+        </div>
+
+        <div class="product_info_grid">
+          <div class="product_info_grid_wrapper">
+
+            <div class="product_info_title">
+              <div class="product_info_name">
+                <h2>Brig Peak Back Graphic Tee</h2>
+                <span class="product_number">C32XE4946348</span>
+              </div>
+
+              <div class="product_price">
+                <span class="product_price_sale">$29.98</span>
+                <span class="product_price_sales">$44.99</span>
+              </div>
+            </div>
+
+            <div class="product_info_swiper_container">
+              <div class="swiper product_info_swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide product_info_img">
+                    <img src="img/products/product_01_a.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide product_info_img">
+                    <img src="img/products/product_01_b.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide product_info_img">
+                    <img src="img/products/product_01_c.jpeg" alt="">
+                  </div>
+
+                  <div class="swiper-slide product_info_img">
+                    <img src="img/products/product_01_d.jpeg" alt="">
+                  </div>
+
+                  <div class="swiper-slide product_info_img">
+                    <img src="img/products/product_01_e.jpeg" alt="">
+                  </div>
+
+                </div>
+
+                <div id="product_info_pagination" class="swiper-pagination"></div>
+
+                <div id="product_info_swiperNext" class="swiper-button-next"></div>
+                <div id="product_info_swiperPrev" class="swiper-button-prev"></div>
+              </div>
+
+            </div>
+
+
+
+            <div class="product_info_colorContainer">
+              <h4>COLOR</h4>
+              <div class="swiper product_info_color_swiper">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product_color_box colorSelected">
+                      <img src="img/products/product_color1.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product_color_box">
+                      <img src="img/products/product_color2.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product_color_box">
+                      <img src="img/products/product_color3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div id="product_info_color_scrollbar" class="swiper-scrollbar"></div>
+              </div>
+            </div>
+
+            <div class="product_info_size">
+              <div>
+                <input type="button" class="size_option" value="M">
+                <input type="button" class="size_option" value="L">
+                <input type="button" class="size_option" value="XL">
+                <input type="button" class="size_option" value="XXL" disabled>
+              </div>
+              <p>Size & Fit Guide</p>
+            </div>
+
+            <div class="quantity">
+              <h4 class="result_value">QUANTITY</h4>
+
+              <div>
+                <input type='button' id="plusbtn" onclick='count("plus")'>
+
+                <span id='result'>0</span>
+
+                <input type='button' id="minusbtn" onclick='count("minus")'>
+              </div>
+            </div>
+
+            <div class="add_bagBtn">
+              <button>Add to bag</button>
+            </div>
+
+            <div class="shipping_info">
+              <a href="javascript:void(0)">Shipping & Exchange</a>
+            </div>
+
+
+            <div class="product_detail_info">
+
+              <ul>
+                <li>
+                  <h5 class="detail_info_title">DETAILS</h5>
+
+                  <div class="detail_inner">
+                    <p>
+                      WICK'ED COMFY
+                      Crafted of cotton blend wicking fabric, this tee is an outdoor essential.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <h5 class="detail_info_title">REVIEWS
+                    <div class="reviews_rate">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
+                  </h5>
+
+                  <div class="detail_inner">
+                    <div class="reviews_wrapper">
+                      <div class="reviews_rate">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                      </div>
+
+                      <form>
+                        <p>Write your review.</p>
+                        <textarea onclick="loginFirst()" name="review" id="reviewTextarea"
+                          placeholder="Write a your review here" cols="30" rows="10" required></textarea>
+                        <button type="submit">Submit</button>
+                      </form>
+
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="divided_line">
+            </div>
+
+            <div class="product_detail_img">
+              <img src="img/products/product_group1.png" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <footer>
+
+    <div class="footer_container">
+
+      <div class="footer_wrapper">
+
+        <section class="social_mail">
+
+          <div class="mail">
+            <h3>join our mailing list</h3>
+            <p>Insider info on sales, new arrivals and more good stuff.</p>
+
+            <div>
+              <input type="text" placeholder="Email Address">
+            </div>
+          </div>
+
+          <div class="social">
+            <a href="javascript:void(0)"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path
+                    d="M18.2132585,15.9571538 L18.2132585,27.8963852 L13.3249589,27.8963852 L13.3249589,15.9571538 L11,15.9571538 L11,11.7394418 L13.3249589,11.7394418 L13.3249589,9.00927976 C13.3249589,7.05724379 14.238756,4 18.2574033,4 L21.8787475,4.01493524 L21.8787475,8.11017826 L19.2506611,8.11017826 C18.8224566,8.11017826 18.2132585,8.32823278 18.2132585,9.2601918 L18.2132585,11.7394418 L21.9405502,11.7394418 L21.5123458,15.9571538 L18.2132585,15.9571538 Z"
+                    fill="#FFFFFF"></path>
+                </g>
+              </svg></a>
+            <a href="javascript:void(0)"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path
+                    d="M24.9463939,12.4170698 C24.9463939,18.8341231 20.1339118,26.2334086 11.3338613,26.2334086 C8.63175897,26.2334086 6.11766702,25.4301675 4,24.0514921 C4.37602071,24.0988286 4.75641375,24.1180591 5.14117913,24.1180591 C7.38418638,24.1180591 9.44501306,23.3444033 11.0817234,22.0411705 C8.99029034,22.0041888 7.22241003,20.5988867 6.61465563,18.6699246 C6.90614455,18.727616 7.2049207,18.755722 7.51389895,18.755722 C7.95113234,18.755722 8.37379127,18.6980307 8.7731311,18.5856065 C6.58696418,18.1403476 4.93713688,16.1758832 4.93713688,13.8238512 L4.93713688,13.7632013 C5.58278485,14.1271006 6.32025182,14.3475112 7.10435702,14.3697002 C5.82034832,13.5013714 4.97648789,12.0132304 4.97648789,10.3283471 C4.97648789,9.43782936 5.21259392,8.60648221 5.62359329,7.88755923 C7.98173867,10.8253803 11.5087546,12.7587802 15.4846635,12.9599602 C15.4030466,12.6049365 15.3607807,12.2351202 15.3607807,11.8534697 C15.3607807,9.17304085 17.5032243,7 20.1455714,7 C21.5199416,7 22.7645993,7.58874762 23.6376087,8.53103968 C24.7263198,8.31506693 25.7509034,7.90974821 26.6763807,7.35502369 C26.3178493,8.48814098 25.5599781,9.44078789 24.5718307,10.0398904 C25.5395739,9.92450767 26.4621363,9.66415696 27.3191138,9.27658943 C26.6792956,10.2499461 25.8674989,11.1049614 24.9318195,11.7898613 C24.9420216,11.9984377 24.9463939,12.2070142 24.9463939,12.4170698 Z"
+                    fill="#FFFFFF"></path>
+                </g>
+              </svg></a>
+            <a href="javascript:void(0)"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(6.000000, 6.000000)" fill="#FFFFFF">
+                    <path
+                      d="M9.99686508,0.00630952381 C7.28186508,0.00630952381 6.94142857,0.0178174603 5.87515873,0.066468254 C4.81111111,0.115 4.08440476,0.284007937 3.44853175,0.531150794 C2.79115079,0.786587302 2.23365079,1.1284127 1.67785714,1.68416667 C1.12210317,2.23996032 0.780277778,2.79746032 0.52484127,3.45484127 C0.277698413,4.09071429 0.108690476,4.81742063 0.0601587302,5.88146825 C0.0115079365,6.9477381 0,7.2881746 0,10.0031746 C0,12.7181349 0.0115079365,13.0585714 0.0601587302,14.1248413 C0.108690476,15.1888889 0.277698413,15.9155952 0.52484127,16.5514683 C0.780277778,17.2088492 1.12210317,17.7663492 1.67785714,18.3221429 C2.23365079,18.8778968 2.79115079,19.2197222 3.44853175,19.4751984 C4.08440476,19.7223016 4.81111111,19.8913095 5.87515873,19.9398413 C6.94142857,19.9884921 7.28186508,20 9.99686508,20 C12.7118254,20 13.0522619,19.9884921 14.1185317,19.9398413 C15.1825794,19.8913095 15.9092857,19.7223016 16.5451587,19.4751984 C17.2025397,19.2197222 17.7600397,18.8778968 18.3158333,18.3221429 C18.8715873,17.7663492 19.2134127,17.2088492 19.4688889,16.5514683 C19.7159921,15.9155952 19.885,15.1888889 19.9335317,14.1248413 C19.9821825,13.0585714 19.9936905,12.7181349 19.9936905,10.0031746 C19.9936905,7.2881746 19.9821825,6.9477381 19.9335317,5.88146825 C19.885,4.81742063 19.7159921,4.09071429 19.4688889,3.45484127 C19.2134127,2.79746032 18.8715873,2.23996032 18.3158333,1.68416667 C17.7600397,1.1284127 17.2025397,0.786587302 16.5451587,0.531150794 C15.9092857,0.284007937 15.1825794,0.115 14.1185317,0.066468254 C13.0522619,0.0178174603 12.7118254,0.00630952381 9.99686508,0.00630952381 Z M9.99686508,1.80753968 C12.6661111,1.80753968 12.9823016,1.8177381 14.0364286,1.86583333 C15.0111111,1.91027778 15.5404365,2.07313492 15.8926984,2.21003968 C16.3593254,2.39138889 16.6923413,2.60801587 17.0421429,2.95785714 C17.3919841,3.30765873 17.6086111,3.6406746 17.7899603,4.10730159 C17.9268651,4.45956349 18.0897222,4.98888889 18.1341667,5.96357143 C18.1822619,7.01769841 18.1924603,7.33388889 18.1924603,10.0031746 C18.1924603,12.6724206 18.1822619,12.9886111 18.1341667,14.0427381 C18.0897222,15.0174206 17.9268651,15.546746 17.7899603,15.8990079 C17.6086111,16.3656349 17.3919841,16.6986508 17.0421429,17.0484524 C16.6923413,17.3982937 16.3593254,17.6149206 15.8926984,17.7962698 C15.5404365,17.9331746 15.0111111,18.0960317 14.0364286,18.1404762 C12.9824603,18.1885714 12.6663095,18.1987698 9.99686508,18.1987698 C7.32738095,18.1987698 7.01126984,18.1885714 5.9572619,18.1404762 C4.98257937,18.0960317 4.45325397,17.9331746 4.10099206,17.7962698 C3.63436508,17.6149206 3.30134921,17.3982937 2.95154762,17.0484524 C2.60174603,16.6986508 2.38507937,16.3656349 2.20373016,15.8990079 C2.0668254,15.546746 1.90396825,15.0174206 1.85952381,14.0427381 C1.81142857,12.9886111 1.80123016,12.6724206 1.80123016,10.0031746 C1.80123016,7.33388889 1.81142857,7.01769841 1.85952381,5.96357143 C1.90396825,4.98888889 2.0668254,4.45956349 2.20373016,4.10730159 C2.38507937,3.6406746 2.60170635,3.30765873 2.95154762,2.95785714 C3.30134921,2.60801587 3.63436508,2.39138889 4.10099206,2.21003968 C4.45325397,2.07313492 4.98257937,1.91027778 5.9572619,1.86583333 C7.01138889,1.8177381 7.32757937,1.80753968 9.99686508,1.80753968 L9.99686508,1.80753968 Z">
+                    </path>
+                    <path
+                      d="M9.99686508,13.3354365 C8.15646825,13.3354365 6.66456349,11.8435317 6.66456349,10.0031746 C6.66456349,8.16277778 8.15646825,6.67087302 9.99686508,6.67087302 C11.8372222,6.67087302 13.329127,8.16277778 13.329127,10.0031746 C13.329127,11.8435317 11.8372222,13.3354365 9.99686508,13.3354365 Z M9.99686508,4.86964286 C7.16166667,4.86964286 4.86333333,7.16797619 4.86333333,10.0031746 C4.86333333,12.8383333 7.16166667,15.1366667 9.99686508,15.1366667 C12.8320238,15.1366667 15.1303571,12.8383333 15.1303571,10.0031746 C15.1303571,7.16797619 12.8320238,4.86964286 9.99686508,4.86964286 L9.99686508,4.86964286 Z">
+                    </path>
+                    <path
+                      d="M16.5328175,4.6668254 C16.5328175,5.32936508 15.9957143,5.86642857 15.3331746,5.86642857 C14.6706746,5.86642857 14.1335714,5.32936508 14.1335714,4.6668254 C14.1335714,4.00428571 14.6706746,3.46718254 15.3331746,3.46718254 C15.9957143,3.46718254 16.5328175,4.00428571 16.5328175,4.6668254">
+                    </path>
+                  </g>
+                </g>
+              </svg></a>
+            <a href="javascript:void(0)"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path
+                    d="M17.506053,21.602266 C16.102983,21.602266 14.7819472,20.8299341 14.3307583,19.9556772 C14.3307583,19.9556772 13.5754767,22.9947604 13.4170655,23.5833406 C12.8527258,25.656291 11.1964808,27.730677 11.0691861,27.8986377 C10.9800799,28.0192249 10.7806516,27.9804647 10.7608502,27.8254241 C10.7240762,27.5598453 10.301175,24.9442526 10.7990386,22.809573 C11.0493847,21.7386443 12.4722562,15.6202822 12.4722562,15.6202822 C12.4722562,15.6202822 12.056427,14.7804789 12.056427,13.5344117 C12.056427,11.5777417 13.1737913,10.1192115 14.5641319,10.1192115 C15.7465579,10.1192115 16.3151407,11.0193084 16.3151407,12.0988504 C16.3151407,13.307593 15.559859,15.110658 15.1694887,16.7816513 C14.8427658,18.1813235 15.8597087,19.3225947 17.2203472,19.3225947 C19.6827918,19.3225947 21.3418656,16.1112442 21.3418656,12.309878 C21.3418656,9.41578645 19.4239593,7.25096006 15.9332567,7.25096006 C11.9913653,7.25096006 9.53316384,10.2369275 9.53316384,13.5717363 C9.53316384,14.7216209 9.86837312,15.5312774 10.3916956,16.1586177 C10.6321411,16.4486011 10.664672,16.563446 10.5783945,16.8936251 C10.5147471,17.1376705 10.3733086,17.7205084 10.3124901,17.9530693 C10.227627,18.2875551 9.95889377,18.4052711 9.66187289,18.2818128 C7.84580233,17.5310143 7,15.5111796 7,13.2429928 C7,9.49474232 10.1144761,5 16.2910962,5 C21.2541737,5 24.5199891,8.64489005 24.5199891,12.5596656 C24.5199891,17.734864 21.6841468,21.602266 17.506053,21.602266 L17.506053,21.602266 Z"
+                    fill="#FFFFFF"></path>
+                </g>
+              </svg></a>
+          </div>
+
+        </section>
+
+        <section class="footerNav">
+
+          <div class="mobile_footerNav_container">
+            <div class="mobile_footerNav">
+              <ul class="mobile_footer_ul">
+                <li>
+                  <span class="footer_title">About Us</span>
+
+                  <ul class="footer_inner">
+                    <li><a href="javascript:void(0)">History</a></li>
+                    <li><a href="javascript:void(0)">Coporate Resonsibility</a></li>
+                    <li><a href="javascript:void(0)">Investor Relations</a></li>
+                    <li><a href="javascript:void(0)">Press Center</a></li>
+                    <li><a href="javascript:void(0)">Careers</a></li>
+                    <li><a href="javascript:void(0)">Affiliate Program</a></li>
+                    <li><a href="javascript:void(0)">Become a Business Partner</a></li>
+                    <li><a href="javascript:void(0)">Digital Media Resources</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span class="footer_title">Shop</span>
+
+                  <ul class="footer_inner">
+                    <li><a href="javascript:void(0)">Shop by Activity</a></li>
+                    <li><a href="javascript:void(0)">Returns</a></li>
+                    <li><a href="javascript:void(0)">Warranty</a></li>
+                    <li><a href="javascript:void(0)">Product Care</a></li>
+                    <li><a href="javascript:void(0)">Accessibility</a></li>
+                    <li><a href="javascript:void(0)">Size Guides</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="pc_footerNav_container">
+
+            <div class="pc_footerNav">
+              <ul>
+                <li>
+                  <span>About Us</span>
+                  <ul class="footer_inner">
+                    <li><a href="javascript:void(0)">History</a></li>
+                    <li><a href="javascript:void(0)">Coporate Resonsibility</a></li>
+                    <li><a href="javascript:void(0)">Investor Relations</a></li>
+                    <li><a href="javascript:void(0)">Press Center</a></li>
+                    <li><a href="javascript:void(0)">Careers</a></li>
+                    <li><a href="javascript:void(0)">Affiliate Program</a></li>
+                    <li><a href="javascript:void(0)">Become a Business Partner</a></li>
+                    <li><a href="javascript:void(0)">Digital Media Resources</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span>Shop</span>
+                  <ul class="footer_inner">
+                    <li><a href="javascript:void(0)">Shop by Activity</a></li>
+                    <li><a href="javascript:void(0)">Returns</a></li>
+                    <li><a href="javascript:void(0)">Warranty</a></li>
+                    <li><a href="javascript:void(0)">Product Care</a></li>
+                    <li><a href="javascript:void(0)">Accessibility</a></li>
+                    <li><a href="javascript:void(0)">Size Guides</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+
+        <section class="legal">
+          <div class="footer-links__copyright">© 2009-<span class="js-now-year">2022</span> Columbia Sportswear Company.
+            14375 NW Science Park Drive, Portland, OR 97229. All&nbsp;rights&nbsp;reserved.<br><br>
+          </div>
+
+          <ul>
+            <li><a href="javascript:void(0)">Terms of Use</a></li>
+            <li><a href="javascript:void(0)">Terms of Sale</a></li>
+            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)">Cookies</a></li>
+            <li><a href="javascript:void(0)">Rewards Terms and
+                Conditions</a></li>
+            <li><a href="javascript:void(0)">User Generated Content Terms of Use</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <script type="text/javascript" src="home.js"></script>
+  <script type="text/javascript" src="product.js"></script>
+
+
+
+
+</body>
+
+
+</html>

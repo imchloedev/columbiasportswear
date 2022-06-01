@@ -1501,6 +1501,10 @@ header.openWhite {
   display: none !important;
 }
 
+.rank_swiper .swiper-wrapper .rank_slide:nth-child(1) a {
+  cursor: pointer;
+}
+
 .rankNum {
   width: 40px;
   height: 40px;
@@ -2796,21 +2800,19 @@ footer {
   }
 }
 
-.mobile_footerNav .mobile_footer_ul > li {
-  padding: 16px 0;
-}
-
 .mobile_footerNav .mobile_footer_ul a {
   cursor: auto;
 }
 
 .mobile_footerNav .mobile_footer_ul span {
+  padding: 16px 0;
   color: white;
   font-weight: 600;
   display: block;
   background: url("img/icon/down-arrow-white.png") no-repeat;
   background-position: right center;
   background-size: 18px 18px;
+  border-bottom: 1px solid white;
   cursor: pointer;
 }
 
@@ -2822,6 +2824,7 @@ footer {
   background: url("img/icon/up-arrow-white.png") no-repeat;
   background-position: right center;
   background-size: 18px 18px;
+  border-bottom: none;
 }
 
 .pc_footerNav_container {
