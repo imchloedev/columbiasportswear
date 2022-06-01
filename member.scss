@@ -34,15 +34,10 @@ $blue: #0070d2;
 
 // start
 
-
-
 .member_main {
-  // border: 1px solid gray;
-  margin-top: 140px;
+  margin: 140px 0;
   width: 100%;
-  // max-height: 640px;
 }
-
 
 
 .member_mainContainer {
@@ -53,9 +48,6 @@ $blue: #0070d2;
     margin: 0 auto;
   }
 }
-
-
-
 
 .member_mainWrapper {
   border: 1px solid #eee;
@@ -89,10 +81,8 @@ $blue: #0070d2;
 }
 
 
-
 .member_on {
   color: $blue !important;
-
 
   &::after {
     content: "";
@@ -106,22 +96,12 @@ $blue: #0070d2;
 }
 
 
-
-
 .member_tabContent {
   padding: 60px 20px 80px 20px;
 }
 
 
-
-
-
 // login
-
-.loginContent {
-  // display: none;
-}
-
 
 .loginWrapper,
 .newAccountWrapper {
@@ -134,10 +114,7 @@ $blue: #0070d2;
 }
 
 
-
-
 .loginWrapper {
-
 
   .email {
     padding-bottom: 40px;
@@ -156,7 +133,6 @@ $blue: #0070d2;
       border-bottom: 1px solid #aaa;
     }
   }
-
 
   .password {
     padding-bottom: 40px;
@@ -182,8 +158,6 @@ $blue: #0070d2;
 
   }
 
-
-
   .remember {
     display: flex;
 
@@ -198,8 +172,6 @@ $blue: #0070d2;
     }
 
   }
-
-
 
   .loginBtn {
     padding: 40px 0 20px;
@@ -221,7 +193,6 @@ $blue: #0070d2;
 
   }
 
-
   .forgotLink {
     text-align: center;
     transition: 0.3s;
@@ -232,23 +203,13 @@ $blue: #0070d2;
         color: gray;
       }
     }
-
-
   }
-
-
 }
 
 
 
 
-
-
 // account
-
-
-
-
 
 .newAccountContent {
   display: none;
@@ -260,13 +221,9 @@ $blue: #0070d2;
   .email {
     padding-bottom: 40px;
 
-
-
     div:nth-child(1) {
       display: flex;
       flex-direction: column;
-
-
 
       input {
         display: block;
@@ -285,7 +242,6 @@ $blue: #0070d2;
 
     .email_sub {
       margin-top: 10px;
-
       display: flex;
 
       input {
@@ -305,18 +261,13 @@ $blue: #0070d2;
       }
 
     }
-
   }
-
-
-
 
   .password {
 
     div {
       display: flex;
       flex-direction: column;
-
 
       input {
         display: block;
@@ -343,7 +294,6 @@ $blue: #0070d2;
     }
   }
 }
-
 
 
 .passwordCon {
@@ -377,9 +327,7 @@ $blue: #0070d2;
     margin-left: 10px;
     line-height: 14px;
   }
-
 }
-
 
 
 .personalInfo {
@@ -390,7 +338,6 @@ $blue: #0070d2;
     font-weight: 700;
     color: #444;
   }
-
 }
 
 
@@ -416,7 +363,6 @@ $blue: #0070d2;
 }
 
 
-
 .zipCode {
   padding: 20px 0;
 
@@ -427,7 +373,6 @@ $blue: #0070d2;
     border: none;
     border-bottom: 1px solid #aaa;
   }
-
 }
 
 
@@ -452,8 +397,6 @@ $blue: #0070d2;
     border-radius: 50px;
     transition: all 0.3s;
     color: $blue;
-
-
 
     &:hover {
       background-color: $blue;

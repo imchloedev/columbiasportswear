@@ -3,16 +3,7 @@ AOS.init({
 })
 
 
-
-
-
-
-
-
-
 // header 
-
-
 
 const showAnim = gsap.from('header', {
   yPercent: -100,
@@ -40,21 +31,14 @@ window.onscroll = function sticky() {
 
 
 
-
-
-
 $(document).ready(function () {
 
   // input click
-
   $(".inputBox span").click(function () {
     $('.inputBox input').toggleClass('inputActive');
   });
 
-
-
   // mobile nav button 
-
   $('.navBtn').on('click', function () {
     this.classList.toggle('openNav');
     $('.navWrapper').slideToggle(300);
@@ -62,9 +46,6 @@ $(document).ready(function () {
 
     $('body').toggleClass('bodyscroll');
   });
-
-
-
 
   //  nav
   $('.mainmenu > li').on('click', function () {
@@ -75,12 +56,7 @@ $(document).ready(function () {
     $(this).siblings().find('.submenu').hide();
   });
 
-
-
-
-
   // profile
-
   $('.profile_wrapper > a').click(function () {
     $('.profile_submenu').slideToggle(300);
   });
@@ -92,10 +68,6 @@ $(document).ready(function () {
     };
   });
 
-
-
-  //영역 외 클릭 시 fade out 
-
   $('html').mouseout(function (e) {
     if ($(e.target).parents('.gnb').length < 1) {
       $('.submenu').fadeOut();
@@ -104,37 +76,23 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
   // search
-
-
-
   $('.inputBox span').click(function () {
     $('.searhWindow').fadeIn(300);
   });
-
 
   $('.search_mobile').click(function () {
     $('.searhWindow').fadeIn(300);
   });
 
-
   $('.searchClose').click(function () {
     $('.searhWindow').fadeOut();
   });
 
-
-
-
-
+});
 
 
   // main 
-
-
   var mainswiper = new Swiper(".main_swiper", {
     slidesPerView: '1',
     // spaceBetween: 10,
@@ -158,41 +116,15 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-
   });
-
-
-
-
-  // mobile footer
-
-  $('.mobile_footer_ul >li').click(function () {
-    $('.footer_title').toggleClass('mfooter_open');
-    $(this).find('.footer_inner').slideToggle(300);
-    $(this).siblings().find('.footer_title').removeClass('mfooter_open');
-    $(this).siblings().find('.footer_inner').hide();
-
-  });
-
-
-
-});
-
-
-
-
-
-
 
 
 // rank time
-
 
 var Target = document.getElementById("clock");
 
 function clock() {
   var time = new Date();
-
   var month = time.getMonth();
   var date = time.getDate();
   var day = time.getDay();
@@ -205,18 +137,13 @@ function clock() {
   Target.innerText =
     `${month + 1}. ${date} ${week[day]}` +
     ` ${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
-
 }
 clock();
-setInterval(clock, 1000); // 1초마다 실행
-
-
-
+setInterval(clock, 1000); // 1sec
 
 
 
 // rank swiper
-
 var rankswiper = new Swiper(".rank_swiper", {
   slidesPerView: '1.5',
   spaceBetween: 20,
@@ -227,17 +154,15 @@ var rankswiper = new Swiper(".rank_swiper", {
     disableOnInteraction: false,
   },
 
-
   breakpoints: {
 
-
     648: {
-      slidesPerView: 2, //브라우저가 768보다 클 때
+      slidesPerView: 2,
       spaceBetween: 20,
     },
 
     1041: {
-      slidesPerView: 4, //브라우저가 768보다 클 때
+      slidesPerView: 4,
       spaceBetween: 20,
     },
 
@@ -246,7 +171,6 @@ var rankswiper = new Swiper(".rank_swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    // type: "fraction",
   },
 
   navigation: {
@@ -258,25 +182,15 @@ var rankswiper = new Swiper(".rank_swiper", {
 
 
 
+// like button
 $('.like').click(function () {
   $(this).toggleClass('liked');
 });
 
 
-
-
-
-
-
-
-
-
 //video
 
-
-
-
-// 스크롤 시 동영상 재생
+// scroll down -> video play
 $(window).scroll(function () {
   var hT = $('.videoBox').offset().top,
     hH = $('.videoBox').outerHeight(),
@@ -284,7 +198,6 @@ $(window).scroll(function () {
     wS = $(this).scrollTop();
   if (wS > (hT + hH - wH)) {
     var video = $('.videoBox').find('video');
-
 
     video.get(0).play();
 
@@ -297,26 +210,11 @@ $(window).scroll(function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 // arrival
-
-
 function arrival() {
   var sum = Math.random();
-
   var total = sum * 50;
   var resultUp = Math.ceil(total);
-
   var Arrival = document.getElementById("arrivalNum");
 
   Arrival.innerText = resultUp;
@@ -325,23 +223,18 @@ function arrival() {
 
 
 
-
-
 // tab
 
 var swiper = new Swiper(".tabSwiper", {
-
   slidesPerView: 4,
   spaceBetween: 10,
 
   breakpoints: {
 
     1040: {
-      // slidesPerView: 2,
       direction: "vertical",
       touchRatio: 0,
       spaceBetween: 20,
-
     },
 
   },
@@ -353,14 +246,13 @@ var swiper = new Swiper(".tabSwiper", {
 });
 
 
-
 var tab = new Swiper('.tabCon', {
   slidesPerView: 1,
   spaceBetween: 10,
   autoHeight: true,
   // touchRatio: 0,
   allowTouchMove: false,
-  // important!!!! 전체 슬라이드가 넘어가는 것을 막기 위해 사용
+  // important!!!! 
 
   thumbs: {
     swiper: {
@@ -373,7 +265,6 @@ var tab = new Swiper('.tabCon', {
 
 var swiper = new Swiper("#con1", {
   slidesPerView: 1.5,
-  // content 안에서는 터치 드래그가 가능해야함.
   spaceBetween: 10,
 
   breakpoints: {
@@ -389,16 +280,12 @@ var swiper = new Swiper("#con1", {
 
   },
 
-
   navigation: {
     nextEl: "#con1_next",
     prevEl: "#con1_prev",
   },
 
 });
-
-
-
 
 
 var swiper = new Swiper("#con2", {
@@ -412,7 +299,6 @@ var swiper = new Swiper("#con2", {
 
     1041: {
       slidesPerView: 2.5,
-
     },
 
   },
@@ -421,11 +307,7 @@ var swiper = new Swiper("#con2", {
     nextEl: "#con2_next",
     prevEl: "#con2_prev",
   },
-
-
 });
-
-
 
 
 var swiper = new Swiper("#con3", {
@@ -448,18 +330,12 @@ var swiper = new Swiper("#con3", {
     nextEl: "#con3_next",
     prevEl: "#con3_prev",
   },
-
-
 });
-
-
-
 
 
 var swiper = new Swiper("#con4", {
   slidesPerView: 1.5,
   spaceBetween: 15,
-
   breakpoints: {
 
     648: {
@@ -468,9 +344,7 @@ var swiper = new Swiper("#con4", {
 
     1041: {
       slidesPerView: 2.5,
-
     },
-
   },
 
   navigation: {
@@ -482,46 +356,7 @@ var swiper = new Swiper("#con4", {
 
 
 
-
-
-
-
-// 남은 시간
-
-
-// function CountDownTimer(dt, id) {
-//   var end = new Date(dt);
-//   var _second = 1000;
-//   var _minute = _second * 60;
-//   var _hour = _minute * 60;
-//   var _day = _hour * 24;
-//   var timer;
-
-//   function showRemaining() {
-//     var now = new Date();
-//     var distance = end - now;
-//     if (distance < 0) {
-//       clearInterval(timer);
-//       document.getElementById("time_left").innerText = '타임딜 종료됨';
-//       return;
-//     }
-//     var days = Math.floor(distance / _day);
-//     var hours = Math.floor((distance % _day) / _hour);
-//     var minutes = Math.floor((distance % _hour) / _minute);
-//     var seconds = Math.floor((distance % _minute) / _second);
-//     document.getElementById("time_days").innerText = days + 'Days ';
-//     document.getElementById("time_hours").innerText += hours + 'hrs ';
-//     document.getElementById("time_mins").innerText += minutes + 'mins ';
-//     document.getElementById("time_secs").innerText += seconds + 'secs';
-//   }
-
-//   timer = setInterval(showRemaining, 1000);
-
-// }
-// CountDownTimer('12/31/2022 00:00:00', 'timeDeal'); // 2020-12-06 오후10시 50분까지
-
-
-
+// remaining Time
 
 const remainDay = document.querySelector("#time_days");
 const remainHour = document.querySelector("#time_hours");
@@ -552,59 +387,9 @@ setInterval(diffDay, 1000);
 
 
 
-
-
-
-
-
-
-
-
 // weather
 
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
-
-
-
-
-// weather.js
-
-var weather = document.getElementById('js-weather');
-
-
-const getJSON = function (url, callback) {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.responseType = 'json';
-  xhr.onload = function () {
-    const status = xhr.status;
-    if (status === 200) {
-      callback(null, xhr.response);
-    } else {
-      callback(status, xhr.response);
-    }
-  };
-  xhr.send();
-};
-
-getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
-  function (err, data) {
-    if (err !== null) {
-      alert('Unexpected error occured.' + err);
-    } else {
-      weather.innerText = (`${data.main.temp}°
-      Wind ${data.wind.speed}m/s
-      Humidity ${data.main.humidity}%
-      High ${data.main.temp_max}°
-      Low ${data.main.temp_min}°`);
-    }
-  });
-
-
-
-
-
-
 
 
 // $(document).ready(function () {
@@ -637,52 +422,7 @@ getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602
 
 
 
-
-
-
-// icon + weather
-
-// getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric', function (err, data) {
-//   if (err !== null) {
-//     alert('Sorry!' + err);
-//   } else {
-//     function (data) {
-//       var $Icon = (data.weather[0].icon).substr(0, 2);
-//       var $Temp = Math.floor(data.main.temp) + 'º';
-//       var $city = data.name;
-//       $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] + '"></i>');
-//       $('.CurrTemp').prepend($Temp);
-//       $('.City').append($city);
-//     },
-//   }
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // inspiration
-
-
 
 const boxes = document.querySelectorAll('.box');
 
@@ -715,10 +455,14 @@ boxes.forEach(box => {
 
 
 
+  // mobile footer
 
-
-
-
+  $('.mobile_footer_ul >li').click(function () {
+    $('.footer_title').toggleClass('mfooter_open');
+    $(this).find('.footer_inner').slideToggle(300);
+    $(this).siblings().find('.footer_title').removeClass('mfooter_open');
+    $(this).siblings().find('.footer_inner').hide();
+  });
 
 
 // top 버튼
