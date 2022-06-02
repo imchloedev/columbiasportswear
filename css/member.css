@@ -1,0 +1,350 @@
+.member_main {
+  margin: 140px 0;
+  width: 100%;
+}
+
+.member_mainContainer {
+  padding: 0 40px;
+}
+
+@media (min-width: 1200px) {
+  .member_mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.member_mainWrapper {
+  border: 1px solid #eee;
+  border-radius: 20px;
+}
+
+@media (min-width: 1041px) {
+  .member_mainWrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.member_tabmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.member_tabmenu li {
+  color: #aaa;
+  width: 100%;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.member_on {
+  color: #0070d2 !important;
+}
+
+.member_on::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0070d2;
+}
+
+.member_tabContent {
+  padding: 60px 20px 80px 20px;
+}
+
+.loginWrapper h3,
+.newAccountWrapper h3 {
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.loginWrapper .email {
+  padding-bottom: 40px;
+}
+
+.loginWrapper .email label {
+  font-weight: 700;
+  color: #444;
+}
+
+.loginWrapper .email input {
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.loginWrapper .password {
+  padding-bottom: 40px;
+}
+
+.loginWrapper .password label {
+  font-weight: 700;
+  color: #444;
+}
+
+.loginWrapper .password input {
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.loginWrapper .password p {
+  font-size: 12px;
+  color: #5fb2ff;
+}
+
+.loginWrapper .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginWrapper .remember input {
+  width: 14px;
+  height: 14px;
+}
+
+.loginWrapper .remember label {
+  margin-left: 10px;
+  line-height: 14px;
+}
+
+.loginWrapper .loginBtn {
+  padding: 40px 0 20px;
+}
+
+.loginWrapper .loginBtn button {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #0070d2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50px;
+  color: #0070d2;
+}
+
+.loginWrapper .loginBtn button:hover {
+  background-color: #0070d2;
+  color: white;
+}
+
+.loginWrapper .forgotLink {
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.loginWrapper .forgotLink a:hover {
+  color: gray;
+}
+
+.newAccountContent {
+  display: none;
+}
+
+.newAccountWrapper .email {
+  padding-bottom: 40px;
+}
+
+.newAccountWrapper .email div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newAccountWrapper .email div:nth-child(1) input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.newAccountWrapper .email div:nth-child(1) label {
+  line-height: 40px;
+  font-weight: 700;
+  color: #444;
+}
+
+.newAccountWrapper .email .email_sub {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newAccountWrapper .email .email_sub input {
+  width: 14px;
+  height: 14px;
+  margin-top: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.newAccountWrapper .email .email_sub label {
+  font-size: 14px;
+  color: #888;
+  font-weight: 400;
+  margin-left: 10px;
+  line-height: 14px;
+}
+
+.newAccountWrapper .password div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newAccountWrapper .password div input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.newAccountWrapper .password div label {
+  line-height: 40px;
+  font-weight: 700;
+  color: #444;
+}
+
+.newAccountWrapper .password p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.passwordCon input {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.email_sub {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email_sub input {
+  width: 14px;
+  height: 14px;
+  margin-top: 0;
+}
+
+.email_sub label {
+  font-size: 16px;
+  color: #222;
+  font-weight: 400;
+  margin-left: 10px;
+  line-height: 14px;
+}
+
+.personalInfo {
+  padding-top: 40px;
+}
+
+.personalInfo p {
+  line-height: 40px;
+  font-weight: 700;
+  color: #444;
+}
+
+.fullName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1040px) {
+  .fullName {
+    display: block;
+  }
+}
+
+.fullName input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.fullName input:not(:nth-child(2)) {
+  margin-right: 20px;
+}
+
+.zipCode {
+  padding: 20px 0;
+}
+
+.zipCode input {
+  display: block;
+  max-width: 320px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.phoneNum input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.createBtn {
+  margin-top: 40px;
+}
+
+.createBtn button {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #0070d2;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #0070d2;
+}
+
+.createBtn button:hover {
+  background-color: #0070d2;
+  color: white;
+}
+/*# sourceMappingURL=member.css.map */

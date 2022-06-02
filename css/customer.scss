@@ -1,0 +1,220 @@
+$mobile: 1040px;
+$laptop: 1041px;
+$desktop: 1200px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+$blue: #0070d2;
+
+
+
+// start
+
+
+.customer_main {
+  margin-top: 70px;
+}
+
+
+.customerSearch {
+  width: 100%;
+  height: 600px;
+  background: url('../img/bg18.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.customerSearch_container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  color: white;
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    transition: 0.3s;
+
+    @include laptop {
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+    border-radius: 50px 0 0 50px;
+    background-color: #eeeeee;
+  }
+
+  button {
+    background-color: $blue;
+    color: white;
+    border-radius: 0 50px 50px 0;
+    padding: 0 20px;
+  }
+}
+
+
+.customerEmail {
+  padding: 80px 40px 140px 40px;
+
+  @include desktop {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+.customerEmail_container {
+  border-radius: 20px;
+  padding: 40px 20px;
+
+  @include laptop {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
+.customerEmail_inner {
+  border: none;
+}
+
+
+.customerEmail-copy {
+  padding-bottom: 40px;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    color: #535353;
+    font-size: 14px;
+  }
+}
+
+
+.customerEmail_option {
+  margin-bottom: 20px;
+
+  select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    padding-left: 20px;
+    background: url('../img/icon/down-arrow.png') no-repeat;
+    background-position: 96% center;
+    background-size: 16px 16px;
+  }
+
+  .select-option_00 {
+    color: #aaa;
+  }
+
+  label {
+    visibility: hidden;
+  }
+}
+
+
+.customerEmail_iput {
+  margin-bottom: 5px;
+  height: auto;
+
+  input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+  }
+
+  label {
+    visibility: hidden;
+  }
+}
+
+
+.customerEmail_message {
+
+  label {
+    visibility: hidden;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+  }
+
+  .form-caption {
+    font-size: 14px
+  }
+
+
+  #messagecount {
+    font-weight: 600;
+    color: #111;
+  }
+
+}
+
+
+.customerEmail_send {
+  margin-top: 40px;
+
+  button {
+    width: 100%;
+    height: 48px;
+    border: 1px solid $blue;
+    transition: all 0.3s;
+    border-radius: 50px;
+    color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      color: white;
+    }
+  }
+}
