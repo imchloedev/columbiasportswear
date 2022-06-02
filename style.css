@@ -59,6 +59,10 @@ body {
   line-height: 1.3rem;
   color: #222;
   overscroll-behavior: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {

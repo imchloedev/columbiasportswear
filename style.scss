@@ -97,6 +97,10 @@ body {
   line-height: 1.3rem;
   color: #222;
   overscroll-behavior: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
 }
 
 
@@ -1585,7 +1589,7 @@ main {
   .swiper-wrapper {
 
     .rank_slide:nth-child(1) {
-      
+
       a {
         cursor: pointer;
       }
@@ -2840,9 +2844,7 @@ footer {
 
   .mobile_footer_ul {
 
-    >li {
-  
-    }
+    >li {}
 
     a {
       cursor: auto;
