@@ -2813,7 +2813,7 @@ footer {
   background: url("img/icon/down-arrow-white.png") no-repeat;
   background-position: right center;
   background-size: 18px 18px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #343434;
   cursor: pointer;
 }
 
