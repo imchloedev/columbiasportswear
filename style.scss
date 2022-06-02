@@ -405,9 +405,9 @@ header.openWhite {
 
   @include mobile {
     display: block;
-    background: url('img/icon/down-arrow.png') no-repeat;
-    background-position: calc(100% - 40px) center;
-    background-size: 18px 18px;
+    // background: url('img/icon/down-arrow.png') no-repeat;
+    // background-position: calc(100% - 40px) center;
+    // background-size: 18px 18px;
     font-size: 18px;
     font-weight: 700;
     padding: 20px 40px;

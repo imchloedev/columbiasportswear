@@ -43,18 +43,17 @@ $(document).ready(function () {
     this.classList.toggle('openNav');
     $('.navWrapper').slideToggle(300);
     $('header').toggleClass('openWhite');
-
     $('body').toggleClass('bodyscroll');
   });
 
-  //  nav
-  $('.mainmenu > li').on('click', function () {
-    $('.menu_title').toggleClass('openTitle');
-    $(this).find('.submenu').slideToggle(300);
+   nav
+  // $('.mainmenu > li').on('click', function () {
+  //   $('.menu_title').toggleClass('openTitle');
+  //   $(this).find('.submenu').slideToggle(300);
 
-    $(this).siblings().find('.menu_title').removeClass('openTitle');
-    $(this).siblings().find('.submenu').hide();
-  });
+  //   $(this).siblings().find('.menu_title').removeClass('openTitle');
+  //   $(this).siblings().find('.submenu').hide();
+  // });
 
   // profile
   $('.profile_wrapper > a').click(function () {

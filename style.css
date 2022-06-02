@@ -325,9 +325,6 @@ header.openWhite {
 @media (max-width: 1040px) {
   .menu_title {
     display: block;
-    background: url("img/icon/down-arrow.png") no-repeat;
-    background-position: calc(100% - 40px) center;
-    background-size: 18px 18px;
     font-size: 18px;
     font-weight: 700;
     padding: 20px 40px;
