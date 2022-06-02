@@ -78,7 +78,7 @@
 
 .loginWrapper .email label {
   font-weight: 700;
-  color: #818181;
+  color: #444;
 }
 
 .loginWrapper .email input {
@@ -96,7 +96,7 @@
 
 .loginWrapper .password label {
   font-weight: 700;
-  color: #818181;
+  color: #444;
 }
 
 .loginWrapper .password input {
