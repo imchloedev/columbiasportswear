@@ -136,20 +136,12 @@ $blue: #0070d2;
 }
 
 
-
 #product_info_swiperNext,
 #product_info_swiperPrev {
   color: #474747;
   transform: translateY(-50%);
 }
 
-#product_info_swiperNext {
-  // right: -30px;
-}
-
-#product_info_swiperPrev {
-  // left: -30px;
-}
 
 #product_info_swiperNext::after,
 #product_info_swiperPrev::after {
@@ -460,6 +452,8 @@ $blue: #0070d2;
   margin-top: 20px;
   padding: 20px;
   color: black;
+  border: 1px solid #aaa;
+  border-radius: 8px;
 }
 
 
