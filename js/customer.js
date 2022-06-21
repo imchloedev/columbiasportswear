@@ -16,3 +16,4 @@ function counter(text, length) {
 
   document.getElementById('messagecount').innerHTML = text.value.length;
 }
+
